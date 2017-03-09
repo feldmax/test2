@@ -1,0 +1,85 @@
+
+
+header {
+    background: radial-gradient(circle at center, lightslategrey, darkslategrey);
+    color: white;
+    font-family: Georgia, serif;
+    letter-spacing: .125rem;
+    line-height: 100%;
+    padding: 0.5rem;
+    transition: 2s;
+}
+
+header:hover {
+
+    text-shadow: 2px 2px 4px #E91E63;
+}
+
+header h1 {
+    display:inline-block;
+    margin: 1rem;
+}
+
+.hamburger {
+    float: right;
+    text-shadow: none;
+}
+
+.hamburger a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main {
+    background-color: yellow;
+    padding: 1rem;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+main ul li {
+    list-style-type:none;
+    display:inline;
+
+}
+
+.memocard {
+    border: 1px solid #0000ff;
+    box-shadow: 0.3rem 0.3rem 0.3rem #888888;
+    border-radius: 0.5rem 0.5rem 0 0.5rem;
+
+    width: 49%;
+    min-width: 20rem;
+    height: 10rem;
+
+
+}
+
+footer {
+    background-color: darkslategrey;
+    color: white;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+footer p {
+    margin: 0;
+}
+
+.copyleft {
+    display:inline-block;
+    transform: rotateY(180deg);
+    margin: 0.5rem;
+}
+
+footer p:hover {
+    position: relative;
+    animation: moving 6s linear;
+}
+@keyframes moving {
+    0% {left: 0%;}
+    50% {left: 100%;}
+    100% {left: 0%;}
+}
