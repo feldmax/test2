@@ -32,29 +32,22 @@ header h1 {
 
 main {
     background-color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 1rem;
 }
 
-ul{
-    padding: 0;
-    margin: 0;
-}
-
-main ul li {
-    list-style-type:none;
-    display:inline;
-
-}
-
 .memocard {
-    border: 1px solid #0000ff;
-    box-shadow: 0.3rem 0.3rem 0.3rem #888888;
-    border-radius: 0.5rem 0.5rem 0 0.5rem;
-
-    width: 49%;
+    display:inline-block;
+    width: 48%;
     min-width: 20rem;
     height: 10rem;
 
+    box-sizing: border-box;
+    box-shadow: 0.3rem 0.3rem 0.3rem #888888;
+
+    border: 2px solid #0000ff;;
+    margin:  0 0.5rem 0.5rem 0;
+    padding: 0.5rem;
 
 }
 
@@ -72,14 +65,4 @@ footer p {
     display:inline-block;
     transform: rotateY(180deg);
     margin: 0.5rem;
-}
-
-footer p:hover {
-    position: relative;
-    animation: moving 6s linear;
-}
-@keyframes moving {
-    0% {left: 0%;}
-    50% {left: 100%;}
-    100% {left: 0%;}
 }
